@@ -1,0 +1,84 @@
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    color: #888888;
+    background-color: #e6e6ff;
+}
+
+h1 {
+    font-size: 48px;
+    color: white
+}
+
+h2 {
+    font-size:  28px;
+    text-align: center;
+    border-bottom: 4px solid #bbb;
+}
+
+header{
+    background: url('../images/Magna.jpg') top center no-repeat;
+    background-position: top;
+    background-color: #e6e6ff;
+    padding-left: 12.0rem;
+    padding-top: 8.0rem;
+    padding-right: 12.0rem;
+}
+
+header img {
+    width: 15%;
+    height: auto;
+    border-style: solid;
+    border-width:thick;
+    border-color: white;  
+}
+    
+nav {
+    float: center;
+    width: 78rem;
+    height: auto;
+    font-weight: bold;
+    padding-left: 12.0rem;
+    padding-right: 12.0rem;
+}
+
+nav a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration:none;
+    background-color: antiquewhite
+}
+
+nav a:hover {
+    background-color: #f4d1a4;
+}
+
+main {
+    padding-left: 12.0rem;
+    padding-right: 12.0rem;
+}
+
+main a{    
+    color: blue;
+    text-decoration:none;
+    background-color: antiquewhite}
+
+main a:hover {
+    background-color: #f4d1a4;
+}
+
+footer{
+    position:fixed;
+    border-top: solid;
+    border-top-color: white;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color: #b30000;
+    color: 000000;   
+    font-size: 12px ;
+    color: cccccc; 
+}
