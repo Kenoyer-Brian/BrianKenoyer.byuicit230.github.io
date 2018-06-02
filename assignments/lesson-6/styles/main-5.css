@@ -103,7 +103,12 @@ article h3 {
 
 article img{
     float: left;
-    position: relative
+    position: relative;
+    padding: 10px;
+}
+
+article p {
+    padding: 10px
 }
 
 footer {
