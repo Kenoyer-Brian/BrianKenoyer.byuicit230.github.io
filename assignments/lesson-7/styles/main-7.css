@@ -111,6 +111,13 @@ article p {
     padding: 10px
 }
 
+div.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
 footer {
     position: relative;
     text-align: center;

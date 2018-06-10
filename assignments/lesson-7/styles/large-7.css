@@ -3,4 +3,12 @@
       footer {
     padding: 10%;    
     }
+    
+    div.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
   }
