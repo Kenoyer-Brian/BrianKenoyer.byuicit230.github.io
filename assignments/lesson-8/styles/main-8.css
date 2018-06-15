@@ -1,0 +1,37 @@
+<style>
+thead {
+    color:black;
+    background-color: cadetblue;
+}
+
+theader{
+    color: aqua;
+}
+
+tbody {
+    color:blue;
+}
+
+tfoot {
+    color:black;
+    background-color: cadetblue;
+}
+
+table, th, td {
+    font-family:Ubuntu, sans-serif;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;    
+}
+
+table{
+    box-shadow: 10px 10px 0 0 #ccc;
+    -moz-box-shadow: 10px 10px 5px 6px #ccc;
+    -webkit-box-shadow: 10px 10px 5px 6px #ccc;
+}
+
+.active{
+    background-color:cornflowerblue ;
+}
+
+</style>
