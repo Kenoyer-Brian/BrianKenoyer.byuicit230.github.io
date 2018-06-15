@@ -3,9 +3,19 @@ thead{
     background-color: #7fb9c2;
 }
 
+thead tr:nth-child(odd){
+    font-size: 26px;
+}
+
 thead tr:nth-child(even){
+    font-size: 16px ;
     color: white;
-    background-color:#628ca6; 
+    background-color:#628ca6;
+    letter-spacing: 1px;
+}
+
+tbody{
+    font-size: 15px;
 }
 
 tbody tr:nth-child(even){
@@ -16,22 +26,22 @@ tbody tr:nth-child(odd){
     background-color: #e7f0ed ;
 }
 
-tfoot {    
+tfoot {   
+    font-size: 10px;
     background-color: #7fb9c2;
 }
 
 table, th, td {
     font-family:"Ubuntu", sans-serif;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     text-align: center;
-    padding: 5px;
+    padding: 8px;
     border-collapse: collapse;
 }
 
 table{
-    box-shadow: 10px 10px 0 0 #ccc;
-    -moz-box-shadow: 10px 10px 5px 6px #ccc;
-    -webkit-box-shadow: 10px 10px 5px 6px #ccc;
+    box-shadow: 10px 10px 6px 6px #ccc;
+    box-shadow: 5px 5px 6px 6px #ccc;
 }
 
 .highlight{
