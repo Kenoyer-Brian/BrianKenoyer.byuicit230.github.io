@@ -39,25 +39,29 @@
         <form method="get" action="thanks.html" >
         <fieldset>
             <legend>Personal Information</legend>
-            <label class="top">Full Name* <input pattern="[A-Za-z]{5,}" type="text" name="fullname" required></label>
-            <label class="top">Email <input type="email" name="email" placeholder="someone@somewhere.com" ></label>
-            <label class="top">Phone* <input type="tel" name="phone" required></label>
-            <label class="top">Zip Code* <input type="number" name="zip" required></label>           
+            <label class="top">Full Name* <input pattern="[A-Za-z]{5,}" type="text" name="fullname" required></label><br>            
+            <label class="top">Phone* <input type="tel" name="phone" required></label><br>
+            <label class="top">Zip Code* <input type="number" name="zip" required></label><br>
+            <label class="top">Email (optional)<input type="email" name="email" placeholder="someone@somewhere.com" ></label><br>
         </fieldset>
     
         <fieldset>
             <legend>Storm Information</legend> 
-            <label class="sbs">Storm Date <input type="date" name="date"></label>
-                <div>Storm Type</div>
+            
+            <div>Storm Date</div>                
+            <input type="date" name="date"><br>       
+            
+            <br><div>Storm Type</div>
             <label class="sbs"><input type="checkbox" name="flood" value="yes"> Flash Flood</label>
             <label class="sbs"><input type="checkbox" name="hail" value="yes"> Hail</label>
             <label class="sbs"><input type="checkbox" name="hurricane" value="yes"> Hurricane</label>
             <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes"> Thunderstorm</label> 
-            <label class="sbs"><input type="checkbox" name="tornado" value="yes"> Tornado</label>
-            <label for="rating">Rating (1 to 10)</label>
+            <label class="sbs"><input type="checkbox" name="tornado" value="yes"> Tornado</label><br>
+            
+            <div>Storm Severity Rating (1 to 10):</div><br>            
             <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
             <span id="ratingvalue">5</span><br>
-            
+            <br>
             <div>Storm region</div>
             <select name="type">
                     <option value="">Select Region &#9662;</option>
@@ -71,11 +75,13 @@
         <fieldset>
             <legend>Additional Information</legend>            
                 <div>Are you in danger?</div>
-            <label class="top">Yes <input type="radio" name="danger" value="yes"></label>
-            <label class="top">No <input type="radio" name="danger" value="no"></label>
-            <label class="top">Maybe <input type="radio" name="danger" value="maybe"></label>
-            <br>        
-            <label class="top">Additional Information<input type="textarea" name="authors"></label>
+            <label class="bottom">Yes <input type="radio" name="danger" value="yes"></label>
+            <label class="bottom">No <input type="radio" name="danger" value="no"></label>
+            <label class="bottom">Maybe <input type="radio" name="danger" value="maybe"></label>
+            <br>
+            <br>
+            <div>Additional Comments</div>
+            <input type="textarea" name="authors">
             
         </fieldset>   
         

@@ -5,7 +5,7 @@
     } 
     
     .topnav a {
-        padding: .40rem 0.5rem;
+    padding: .40rem 0.5rem;
     }
     
     header{    
@@ -22,11 +22,12 @@
     border-style: solid;
     border-width: thick;
     border-color: white;     
-}
+    }
     
     .topnav  {    
     display:flex;
-    padding-left: 12rem;    
+    padding-left: 7%;
+    padding-right: 7%;
     }
     
     .topnav a {   
@@ -34,7 +35,7 @@
     text-align: center;
     padding-left: 3px; 
     width: 100%;
-    max-width: 210.5px;
+    max-width: 210.5px;        
     }
 
     main {

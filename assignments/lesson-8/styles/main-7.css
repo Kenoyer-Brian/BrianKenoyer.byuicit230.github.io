@@ -153,14 +153,14 @@ form legend {
     color: #445ba9;
     margin: 0 1rem;
     padding: 0 .5rem;
+    font-size: 20px;
 }
 
 
 form lable.top, form div{
     display: block;    
     color: red;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
 form label.top input, form label.top select{
@@ -175,6 +175,11 @@ form label.top input, form label.top select{
 form label.sbs{
     display: block;
     padding: .75rem 0;
+    color: black;    
+}
+
+form label.bottom{
+    padding: .75rem;
     color: #555;    
 }
 
