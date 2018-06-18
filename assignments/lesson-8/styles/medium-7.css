@@ -4,6 +4,10 @@
     display:none; 
     } 
     
+    .topnav a {
+        padding: .40rem 0.5rem;
+    }
+    
     header{    
     padding-left: 12.0rem;
     padding-top: 8.0rem;
