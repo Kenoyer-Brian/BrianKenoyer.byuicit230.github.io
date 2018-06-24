@@ -10,7 +10,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content=" Assignment portal by Brian Kenoyer for BYUI CIT230.  ">
         <title>Brian Kenoyer | CIT 230 Weather Site Project </title> <!-- Sets Header -->      
-        <link rel="stylesheet" href="styles/main.css"> <!-- Link to Style Sheet -->
+                <link rel="stylesheet" href="styles/normalize.css">  
+        <link rel="stylesheet" href="styles/main-7.css"> 
+        <link rel="stylesheet" href="styles/medium-7.css">          
+        <link rel="stylesheet" href="styles/large-7.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px" >
     </head>
     
     <body>
@@ -19,18 +24,19 @@
                 <img src="images/Logo.png" alt="Profile Picture">
             </a>
             <h1>Golden Peak Weather</h1> <!-- Text of first header -->
-            <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li> <!--Link to the Homepage -->
-                    <li><a href="franklin.html">Franklin</a></li> <!--Link to the Franklin Page -->
-                    <li><a href="greenville.html">Greenville</a></li> <!--Link to the Greenville Page -->
-                    <li><a href="springfield.html">Springfield</a></li> <!--Link to the Springfield Page -->
-                    <li><a href="stormCenter.html">Storm Center</a></li> <!--Link to the Storm Center Page -->
-                    <li><a href="gallery.html">Gallery</a></li> <!--Link to the Gallery Page -->
-                </ul>
-            </nav>
-        </header>
 
+        </header>
+            <nav class="topnav" id="myTopnav">
+                
+                <a href="index.html" class="active" >Home</a>
+                <a href="franklin-7.html">Franklin</a>
+                <a href="#">Greenville</a>
+                <a href="#">Springfield</a>
+                <a href="stormcenter.html"  >Storm Center</a>
+                <a href="gallery-7.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+
+            </nav>
         <main>
             <div class="subheading">
                 <!-- Slideshow container -->
