@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content=" Golden Peaks Gallery ">        
+        <title> Golden Peaks Weather | Gallery Page </title>      
+        <link rel="stylesheet" href="styles/normalize.css">  
+        <link rel="stylesheet" href="styles/main-7.css"> 
+        <link rel="stylesheet" href="styles/medium-7.css">          
+        <link rel="stylesheet" href="styles/large-7.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px" >
+    </head>
+    <body>
+
+      <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>          
+        <h1>Golden Peak Weather</h1>
+      </header>
+
+      <nav class="topnav" id="myTopnav">
+            <a href="#">Home</a>
+            <a href="franklin-7.html">Franklin</a>
+            <a href="#">Greenville</a>
+            <a href="#">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery-7.html" class="active">Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+      </nav>
+
+      <main>
+        <h2>Golden Peaks Gallery</h2>
+        <div class="galleryGrid">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/Tool.jpg">
+                  <img src="images/Tool_icon.jpg" alt="TOOL" >
+                </a>
+                <div class="desc">Franklin Tool Concert in 2015</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/burningman.JPG">
+                  <img src="images/burningman_icon.JPG" alt="Burning Man" >
+                </a>
+                <div class="desc">Franklin Burning Man 2016</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/posh_picnic.jpg">
+                  <img src="images/posh_picnic_icon.jpg" alt="Posh_Nic" >
+                </a>
+                <div class="desc">Springfield Fashion Picnic 2017</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/posh_people.jpg">
+                  <img src="images/posh_people_icon.jpg" alt="Posh_People" >
+                </a>
+                <div class="desc">Springfield Croquet Tournament 2017 </div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/bridge.jpg">
+                  <img src="images/bridge_icon.jpg" alt="Mountains" >
+                </a>
+                <div class="desc">Greenville Parks Bridge Opening 2015 </div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="images/group_picnic.JPG">
+                  <img src="images/group_picnic_icon.JPG" alt="Mountains" >
+                </a>
+                <div class="desc">Greenville Strawberry Festival 2017 </div>
+              </div>
+            </div>          
+        </div>
+      </main>
+        
+      <footer>
+        <section class="contact">
+          <h5>Golden Peak Weather
+          (360) 653-1234
+          231 Main St. Marysville, WA 98270
+          Google Map</h5>
+        </section>
+          
+        <section class="footer-bar">
+           <h6> &copy;2018 | All Rights Reserved | Golden Peak Weather | <span id="currentdate"> </span></h6>            
+        </section>       
+
+      </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>
