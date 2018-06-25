@@ -1,4 +1,4 @@
-        var springfieldRequestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=98292&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
+        var springfieldRequestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=98292&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
         var springfieldRequest = new XMLHttpRequest();
         springfieldRequest.open('GET', springfieldRequestURL);
         springfieldRequest.responseType = 'json';

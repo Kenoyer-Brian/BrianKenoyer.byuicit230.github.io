@@ -1,4 +1,4 @@
-        var franklinRequestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=98270&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
+        var franklinRequestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=98270&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
         var franklinRequest = new XMLHttpRequest();
         franklinRequest.open('GET', franklinRequestURL);
         franklinRequest.responseType = 'json';

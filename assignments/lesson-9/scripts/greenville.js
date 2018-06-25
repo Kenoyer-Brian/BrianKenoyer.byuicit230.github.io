@@ -1,4 +1,4 @@
-        var greenvilleRequestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=98046&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
+        var greenvilleRequestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=98046&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
         var greenvilleRequest = new XMLHttpRequest();
         greenvilleRequest.open('GET', greenvilleRequestURL);
         greenvilleRequest.responseType = 'json';
