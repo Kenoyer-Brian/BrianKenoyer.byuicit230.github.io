@@ -8,7 +8,7 @@
             
             var springfieldWeather = springfieldRequest.response;
             
-            var springfieldImagesrc = 'http://openweathermap.org/img/w/' + springfieldWeather.weather[0].icon + '.png';
+            var springfieldImagesrc = 'https://openweathermap.org/img/w/' + springfieldWeather.weather[0].icon + '.png';
             
             document.getElementById('springfieldWeatherImage').src = springfieldImagesrc;
             

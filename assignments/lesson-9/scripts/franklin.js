@@ -8,7 +8,7 @@
             
             var franklinWeather = franklinRequest.response;
             
-            var franklinImagesrc = 'http://openweathermap.org/img/w/' + franklinWeather.weather[0].icon + '.png';
+            var franklinImagesrc = 'https://openweathermap.org/img/w/' + franklinWeather.weather[0].icon + '.png';
             
             document.getElementById('franklinWeatherImage').src = franklinImagesrc;
             

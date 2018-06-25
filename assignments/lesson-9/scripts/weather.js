@@ -8,7 +8,7 @@
             
             var franklinWeather = franklinRequest.response;
             
-            var franklinImagesrc = 'http://openweathermap.org/img/w/' + franklinWeather.weather[0].icon + '.png';
+            var franklinImagesrc = 'https://openweathermap.org/img/w/' + franklinWeather.weather[0].icon + '.png';
             
             document.getElementById('franklinWeatherImage').src = franklinImagesrc;
             
@@ -34,7 +34,7 @@
             
             var greenvilleWeather = greenvilleRequest.response;
             
-            var greenvilleImagesrc = 'http://openweathermap.org/img/w/' + greenvilleWeather.weather[0].icon + '.png';
+            var greenvilleImagesrc = 'https://openweathermap.org/img/w/' + greenvilleWeather.weather[0].icon + '.png';
             
             document.getElementById('greenvilleWeatherImage').src = greenvilleImagesrc;
             
@@ -60,7 +60,7 @@
             
             var springfieldWeather = springfieldRequest.response;
             
-            var springfieldImagesrc = 'http://openweathermap.org/img/w/' + springfieldWeather.weather[0].icon + '.png';
+            var springfieldImagesrc = 'https://openweathermap.org/img/w/' + springfieldWeather.weather[0].icon + '.png';
             
             document.getElementById('springfieldWeatherImage').src = springfieldImagesrc;
             

@@ -8,7 +8,7 @@
             
             var greenvilleWeather = greenvilleRequest.response;
             
-            var greenvilleImagesrc = 'http://openweathermap.org/img/w/' + greenvilleWeather.weather[0].icon + '.png';
+            var greenvilleImagesrc = 'https://openweathermap.org/img/w/' + greenvilleWeather.weather[0].icon + '.png';
             
             document.getElementById('greenvilleWeatherImage').src = greenvilleImagesrc;
             
