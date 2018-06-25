@@ -1,56 +1,25 @@
- var header = document.querySelector('header');
-        var section = document.querySelector('section');
-    
-        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
+        var franklinRequestURL = 'http://api.openweathermap.org/data/2.5/weather?zip=98270&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
+        var franklinRequest = new XMLHttpRequest();
+        franklinRequest.open('GET', franklinRequestURL);
+        franklinRequest.responseType = 'json';
+        franklinRequest.send();
         
-        request.onload = function() {
-            var superHeroes = request.response;
-            populateHeader(superHeroes);
-            showHeroes(superHeroes);
-            }
+        franklinRequest.onload = function() {
             
-        function populateHeader(jsonObj) {
-            var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['squadName'];
-            header.appendChild(myH1);
+            var franklinWeather = franklinRequest.response;
+            
+            var franklinImagesrc = 'http://openweathermap.org/img/w/' + franklinWeather.weather[0].icon + '.png';
+            
+            document.getElementById('franklinWeatherImage').src = franklinImagesrc;
+            
+            document.getElementById("franklinTempHigh").innerHTML = "  " + franklinWeather.main.temp_max;
+            
+            document.getElementById("franklinTempLow").innerHTML = "  " + franklinWeather.main.temp_min;
+            
+            document.getElementById("franklinTemp").innerHTML = "  " + franklinWeather.main.temp;
+            
+            document.getElementById("franklinConditions").innerHTML = "  " + franklinWeather.weather[0].description;       
+            
+            document.getElementById("franklinWindSpeed").innerHTML = "  " + franklinWeather.wind.speed;         
 
-            var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);
-        }    
-        
-        function showHeroes(jsonObj) {
-            var heroes = jsonObj['members'];
-      
-            for (var i = 0; i < heroes.length; i++) {
-                var myArticle = document.createElement('article');
-                var myH2 = document.createElement('h2');
-                var myPara1 = document.createElement('p');
-                var myPara2 = document.createElement('p');
-                var myPara3 = document.createElement('p');
-                var myList = document.createElement('ul');
-
-                myH2.textContent = heroes[i].name;
-                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-                myPara2.textContent = 'Age: ' + heroes[i].age;
-                myPara3.textContent = 'Superpowers:';
-
-                var superPowers = heroes[i].powers;
-                for (var j = 0; j < superPowers.length; j++) {
-                    var listItem = document.createElement('li');
-                    listItem.textContent = superPowers[j];
-                    myList.appendChild(listItem);
-                }
-
-                myArticle.appendChild(myH2);
-                myArticle.appendChild(myPara1);
-                myArticle.appendChild(myPara2);
-                myArticle.appendChild(myPara3);
-                myArticle.appendChild(myList);
-
-                section.appendChild(myArticle);
-              }
+        }

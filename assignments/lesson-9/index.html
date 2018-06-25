@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content=" Assignment portal by Brian Kenoyer for BYUI CIT230.  ">
         <title>Brian Kenoyer | CIT 230 Weather Site Project </title>       
-                <link rel="stylesheet" href="styles/normalize.css">  
+        <link rel="stylesheet" href="styles/normalize.css">  
         <link rel="stylesheet" href="styles/main-7.css"> 
         <link rel="stylesheet" href="styles/medium-7.css">          
         <link rel="stylesheet" href="styles/large-7.css"> 
@@ -30,8 +30,8 @@
                 
                 <a href="index.html" class="active" >Home</a>
                 <a href="franklin-7.html">Franklin</a>
-                <a href="#">Greenville</a>
-                <a href="#">Springfield</a>
+                <a href="greenville-9.html">Greenville</a>
+                <a href="springfield-9.html">Springfield</a>
                 <a href="stormcenter.html"  >Storm Center</a>
                 <a href="gallery-7.html">Gallery</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
@@ -72,14 +72,118 @@
                   <span class="dot" onclick="currentSlide(1)"></span> 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>  
+                </div>                  
+                
 
+                <div class ="row">
+
+<!-- vvFranklin Summaryvv -->
+                    <section class="weather-summary">
+                      <h1 class="franklinName"> </h1> 
+
+                      <div class="highlow">
+                        <a>High: <span id= "franklinTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "franklinTempLow"></span>&deg;F</a>  
+                      </div>
+
+                      <div class="current">
+
+                        <picture>
+                            <img src="" id="franklinWeatherImage" alt="franklinIcon" width="100">
+                        </picture>
+
+
+                      <div class="conditions">
+
+                        <a>Current Conditions: <span id= "franklinConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "franklinTemp"></span>&deg;F </a>   
+
+                      </div>
+
+                      </div>
+
+                      <div class="conditions">  
+                        <p>Wind Speed: <span id= "franklinWindSpeed">5</span> mph SW</p>
+                        <p><span id="windChill"> </span></p>
+                      </div> 
+
+                    </section>
+<!-- ^^Franklin Summary^^ -->                    
+
+
+<!-- vvGreenville Summaryvv -->
+                    <section class="weather-summary">
+                      <h1 class="greenvilleName"> </h1>
+
+                      <div class="highlow">
+                        <a>High: <span id= "greenvilleTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "greenvilleTempLow"></span>&deg;F</a>  
+                      </div>
+
+                      <div class="current">
+
+                        <picture>
+                            <img src="" id="greenvilleWeatherImage" alt="greenvilleIcon" width="100">
+                        </picture>
+
+
+                      <div class="conditions">
+
+                        <a>Current Conditions: <span id= "greenvilleConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "greenvilleTemp"></span>&deg;F </a>   
+
+                      </div>
+
+                      </div>
+
+                      <div class="conditions">  
+                        <p>Wind Speed: <span id= "greenvilleWindSpeed">5</span> mph SW</p>
+                        <p><span id="windChill"> </span></p>
+                      </div> 
+                    </section>
+<!-- ^^Greenville Summary^^ -->                    
+
+<!-- vvSpringfield Summary -->                    
+                    <section class="weather-summary">
+                      <h1 class="springfieldName"> </h1>
+
+                      <div class="highlow">
+                        <a>High: <span id= "springfieldTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "springfieldTempLow"></span>&deg;F</a>  
+                      </div>
+
+                      <div class="current">
+
+                        <picture>
+                            <img src="" id="springfieldWeatherImage" alt="springfieldIcon" width="100">
+                        </picture>
+
+
+                      <div class="conditions">
+
+                        <a>Current Conditions: <span id= "springfieldConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "springfieldTemp"></span>&deg;F </a>   
+
+                      </div>
+
+                      </div>
+
+                      <div class="conditions"> 
+                        <p>Wind Speed: <span id= "springfieldWindSpeed">5</span> mph SW</p>
+                        <p><span id="windChill"> </span></p>
+                      </div> 
+                    </section>
+                  </div>
+<!-- ^^Springfield Summary^^ --> 
+                
+                
+<!-- vvNews Articles Sectionvv -->                 
                 <h2><img src="images/sunny-day.jpg" width="350" height="175" alt="Sunny"> Franklin Farmers are woried about the resent heat wave and crop affection.</h2>
                 
                 <h2><img src="images/motorcycle.jpeg" width="350" height="175" alt="Bike"> Greenville Annual motorcycle ride starts this weekend!</h2> 
                 
                 <h2><img src="images/Bakeoff.jpg" width="350"  height="175" alt="Bake"> Springfield is having its bake off! Signup at the event!</h2>  
-                
+<!-- ^^News Articles Section^^ -->                
             </div>    
         </main>
         
@@ -93,13 +197,16 @@
           
         <section class="footer-bar">
            <h6> &copy;2018 | All Rights Reserved | Golden Peak Weather | <span id="currentdate"> </span></h6>
+            <h6>Weather information supplied by <a href="https://openweathermap.org/">OpenWeatherMap.org</a> </h6>
             
         </section>       
    
         </footer>
             <script src="scripts/slider.js"></script> 
-            <script src="scripts/franklin.js"></script>
             <script src="scripts/currentdate.js"></script>
             <script src="scripts/hamburger.js"></script>
+            <script src="scripts/weather.js"></script>  
+            <script src="scripts/towns.js"></script>
+
     </body>
 </html>

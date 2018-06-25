@@ -23,46 +23,45 @@
 
       <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
-            <a href="franklin-7.html" class="active">Franklin</a>
+            <a href="franklin-7.html">Franklin</a>
             <a href="greenville-9.html">Greenville</a>
-            <a href="springfield-9.html">Springfield</a>
+            <a href="springfield-9.html" class="active">Springfield</a>
             <a href="stormcenter.html">Storm Center</a>
             <a href="gallery-7.html">Gallery</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
       </nav>
 
       <main>
-        <h2>Franklin Weather</h2>
+        <h2>Springfield Weather</h2>
         <div class ="row">
                     <section class="weather-summary">
-                      <h1 class="franklinName"> </h1> 
+                      <h1 class="springfieldName"> </h1>
 
                       <div class="highlow">
-                        <a>High: <span id= "franklinTempHigh"></span>&deg;F |</a>  
-                        <a>Low: <span id= "franklinTempLow"></span>&deg;F</a>  
+                        <a>High: <span id= "springfieldTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "springfieldTempLow"></span>&deg;F</a>  
                       </div>
 
                       <div class="current">
 
                         <picture>
-                            <img src="" id="franklinWeatherImage" alt="franklinIcon" width="100">
+                            <img src="" id="springfieldWeatherImage" alt="springfieldIcon" width="100">
                         </picture>
 
 
                       <div class="conditions">
 
-                        <a>Current Conditions: <span id= "franklinConditions"> </span></a> <br>  
-                        <a>Current Temp: <span id= "franklinTemp"></span>&deg;F </a>   
+                        <a>Current Conditions: <span id= "springfieldConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "springfieldTemp"></span>&deg;F </a>   
 
                       </div>
 
                       </div>
 
-                      <div class="conditions">  
-                        <p>Wind Speed: <span id= "franklinWindSpeed">5</span> mph SW</p>
+                      <div class="conditions"> 
+                        <p>Wind Speed: <span id= "springfieldWindSpeed">5</span> mph SW</p>
                         <p><span id="windChill"> </span></p>
                       </div> 
-
                     </section>
 
             <section class="forecast">
@@ -129,8 +128,9 @@
         </section>       
 
       </footer>
+        <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/franklin.js"></script>
+        <script src="scripts/springfield.js"></script>
     </body>
 </html>
