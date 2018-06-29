@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content=" Franklin Weather Page ">       
+        <title> Golden Peaks Weather | Franklin Weather Page </title>      
+        <link rel="stylesheet" href="styles/normalize.css">  
+        <link rel="stylesheet" href="styles/main-7.css"> 
+        <link rel="stylesheet" href="styles/medium-7.css">          
+        <link rel="stylesheet" href="styles/large-7.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px" >
+    </head>
+    <body>
+
+      <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>          
+        <h1>Golden Peak Weather</h1>
+      </header>
+
+      <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="franklin-7.html">Franklin</a>
+            <a href="greenville-9.html" class="active" >Greenville</a>
+            <a href="springfield-9.html">Springfield</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery-7.html">Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+      </nav>
+
+      <main>
+        <h2>Greenville Weather</h2>
+          <div class ="row">
+                    <section class="weather-summary">
+                      <h1 class="greenvilleName">Greenville </h1>
+
+                      <div class="highlow">
+                        <a>High: <span id= "greenvilleTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "greenvilleTempLow"></span>&deg;F</a>  
+                      </div>
+
+                      <div class="current">
+
+                        <picture>
+                            <img src="images/badphoto.png" id="greenvilleWeatherImage" alt="greenvilleIcon" width="100">
+                        </picture>
+
+
+                      <div class="conditions">
+
+                        <a>Current Conditions: <span id= "greenvilleConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "greenvilleTemp"></span>&deg;F </a>   
+
+                      </div>
+
+                      </div>
+
+                      <div class="conditions">  
+                        <p>Wind Speed: <span id= "greenvilleWindSpeed">5</span> mph SW</p>
+                        <p><span id="windChill"> </span></p>
+                      </div> 
+                    </section>
+
+            <section class="forecast">
+              <h3>Ten Day Forecast</h3>
+
+                <table>
+                    <thead>
+                          <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                          </tr>
+                    </thead>
+                    <tbody>  
+                          <tr>
+                            <td><img src="images/sunny.png" alt="Sunny" width="40"><br>89&deg;F</td>
+                            <td><img src="images/sunCloud.png" alt="Suncloud" width="40"><br>87&deg;F</td>
+                            <td><img src="images/sunRain.png" alt="Sunrain" width="40"><br>78&deg;F</td>
+                            <td><img src="images/cloudRain.png" alt="Cloudrain" width="40"><br>75&deg;F</td>
+                            <td><img src="images/cloudRain.png" alt="Cloudrain" width="40"><br>72&deg;F</td>
+                            <td><img src="images/cloudRain.png" alt="Cloudrain" width="40"><br>72&deg;F</td>
+                            <td><img src="images/sunRain.png" alt="Sunrain" width="40"><br>79&deg;F</td>
+                            <td><img src="images/sunCloud.png" alt="Suncloud" width="40"><br>83&deg;F</td>
+                            <td><img src="images/sunny.png" alt="Sunny" width="40"><br>85&deg;F</td>
+                            <td><img src="images/sunny.png" alt="Sunny" width="40"><br>89&deg;F</td>
+                          </tr>
+                    </tbody>
+                  </table>
+            </section>
+          </div>
+          
+        <article>
+          <h3>Greenville Annual Motorcycle Ride</h3>	
+          <picture>
+            
+            <img src="images/franklinSmall.jpg" alt="Franklin" srcset="images/franklinSmall.jpg 1x, images/franklinMedium.jpg 2x, images/franklinLarge.jpg 3x">
+              
+          </picture>  
+          <p class="town-article">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pellentesque orci, in dictum leo. In et fringilla diam, at euismod lorem. Etiam molestie venenatis lobortis. Donec laoreet lacus dolor, quis tincidunt nunc pellentesque vel. Ut rutrum ligula a tellus pharetra, in dignissim ligula pharetra. Donec commodo mauris nec lectus dapibus pretium. Donec gravida accumsan efficitur. Donec feugiat vulputate auctor. Pellentesque erat turpis, accumsan id dui quis, euismod malesuada lectus. Nam mi est, cursus sit amet eleifend non, aliquet sed sem. Cras pharetra ex enim, sit amet euismod ante condimentum ut. Nulla sed fringilla magna, at consectetur tellus. Curabitur euismod ornare condimentum.
+          </p>
+        </article>
+          
+      </main>
+        
+      <footer>
+        <section class="contact">
+          <h5>Golden Peak Weather
+          (360) 653-1234
+          231 Main St. Marysville, WA 98270
+          Google Map</h5>
+        </section>
+          
+        <section class="footer-bar">
+           <h6> &copy;2018 | All Rights Reserved | Golden Peak Weather | <span id="currentdate"> </span></h6>
+            
+        </section>       
+
+      </footer>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/greenville.js"></script>
+    </body>
+</html>
