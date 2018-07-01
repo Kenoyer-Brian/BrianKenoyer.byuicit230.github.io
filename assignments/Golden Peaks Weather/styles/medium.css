@@ -1,0 +1,191 @@
+@media only screen and (min-width: 37.5em) {
+    
+    .topnav .icon { 
+    display:none; 
+    } 
+    
+    .topnav a {
+    padding: .40rem 0.5rem;
+    }
+    
+    header{    
+    padding-left: 12.0rem;
+    padding-top: 8.0rem;
+    padding-right: 12.0rem;    
+    }
+    
+    header img {
+    display: block;    
+    width: 55%;
+    max-width: 10rem;
+    height: auto;
+    border-style: solid;
+    border-width: thick;
+    border-color: white;     
+    }
+    
+    .topnav  {    
+    display:flex;
+    padding-left: 7%;
+    padding-right: 7%;
+    }
+    
+    .topnav a {   
+    float:left;
+    text-align: center;
+    padding-left: 3px; 
+    width: 100%;
+    max-width: 210.5px;        
+    }
+
+    main {
+    padding-left: 10%;  
+    padding-right: 10%;
+    }
+    
+    .weather-summary,.forecast {
+    flex: 50%;
+    padding: 2%;    
+    }
+    
+    .weather-summary{
+    border-right: 1px solid black;
+    width: 25%;
+    }
+    
+    main section, .forcast{
+    display: block;    
+    }
+    
+    .row{ 
+    display: flex;
+    }
+    
+    .forecast{
+    display:table;
+    width: 75%;
+    text-align: center;
+    }
+    
+    th{
+    border: 1px solid black;
+    }
+    
+    td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    }
+    
+    footer {
+    padding: 7%;    
+    }
+ 
+    div.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+    
+    
+    
+    .slideshow-container {
+      display: block;
+      max-width: 1500px;
+      position: relative;
+      margin: auto;
+    }
+
+
+    .mySlides {
+        display:none;
+    }
+
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    
+    .next {
+      right: 0;
+      border-radius: 12px 12px 12px 12px;
+    }
+
+    .prev {
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    
+    .text {
+      color: #f2f2f2;
+      font-size: 44px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      background-color:rgba(255,0,0,0.5);  
+
+    }
+
+    
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 14px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+  }

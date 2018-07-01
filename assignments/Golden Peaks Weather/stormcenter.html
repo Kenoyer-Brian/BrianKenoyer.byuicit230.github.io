@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content=" Storm Center Page ">       
+        <title> Golden Peaks Weather | Storm Center Page </title>      
+        <link rel="stylesheet" href="styles/normalize.css">  
+        <link rel="stylesheet" href="styles/main.css"> 
+        <link rel="stylesheet" href="styles/medium.css">          
+        <link rel="stylesheet" href="styles/large.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px" >
+    </head>
+    <body>
+
+      <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>          
+        <h1>Golden Peak Weather</h1>
+      </header>
+
+      <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="franklin.html">Franklin</a>
+            <a href="greenville.html">Greenville</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="stormcenter.html" class="active" >Storm Center</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+      </nav>
+
+      <main>
+<h2> Storm Center </h2>
+          
+          <p>Report a storm or strange and unusual weather to the Golden Peak Weather Storm Division.</p>
+          
+        <form method="get" action="thanks.html" >
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top">Full Name* <input pattern="[A-Z a-z ]{5,}" type="text" name="fullname" required></label><br>            
+            <label class="top">Phone* <input type="tel" name="phone" required></label><br>
+            <label class="top">Zip Code* <input type="number" name="zip" required></label><br>
+            <label class="top">Email (optional)<input type="email" name="email" placeholder="someone@somewhere.com" ></label><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Storm Information</legend> 
+            
+            <div>Storm Date</div>                
+            <input type="date" name="date"><br>       
+            
+            <br><div>Storm Type</div>
+            <label class="sbs"><input type="checkbox" name="flood" value="yes"> Flash Flood</label>
+            <label class="sbs"><input type="checkbox" name="hail" value="yes"> Hail</label>
+            <label class="sbs"><input type="checkbox" name="hurricane" value="yes"> Hurricane</label>
+            <label class="sbs"><input type="checkbox" name="thunderstorm" value="yes"> Thunderstorm</label> 
+            <label class="sbs"><input type="checkbox" name="tornado" value="yes"> Tornado</label><br>
+            
+            <div>Storm Severity Rating (1 to 10):</div><br>            
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">5</span><br>
+            <br>
+            <div>Storm region</div>
+            <select name="type">
+                    <option value="">Select Region &#9662;</option>
+                <option value="franklin"> Franklin</option>
+                <option value="greenville"> Greenville</option>
+                <option value="springfield"> Springfield</option>
+            </select>     
+           
+        </fieldset>
+            
+        <fieldset>
+            <legend>Additional Information</legend>            
+                <div>Are you in danger?</div>
+            <label class="bottom">Yes <input type="radio" name="danger" value="yes"></label>
+            <label class="bottom">No <input type="radio" name="danger" value="no"></label>
+            <label class="bottom">Maybe <input type="radio" name="danger" value="maybe"></label>
+            <br>
+            <br>
+            <div>Additional Comments</div>
+            <input type="textarea" name="authors">
+            
+        </fieldset>   
+        
+        <input href="thanks.html" type="submit" value="Report Storm"  class="submitBtn">   
+            
+        </form>
+
+      </main>
+        
+      <footer>
+        <section class="contact">
+          <h5>Golden Peak Weather
+          (360) 653-1234
+          231 Main St. Marysville, WA 98270
+          Google Map</h5>
+        </section>
+          
+        <section class="footer-bar">
+           <h6> &copy;2018 | All Rights Reserved | Golden Peak Weather | <span id="currentdate"> </span></h6>
+            
+        </section>       
+
+      </footer>
+        <script src="scripts/rating.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </body>
+</html>
