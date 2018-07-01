@@ -23,8 +23,8 @@
 
       <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
-            <a href="franklin.html">Franklin</a>
-            <a href="greenville.html" class="active" >Greenville</a>
+            <a href="franklin.html" class="active">Franklin</a>
+            <a href="greenville.html">Greenville</a>
             <a href="springfield.html">Springfield</a>
             <a href="stormcenter.html">Storm Center</a>
             <a href="gallery.html">Gallery</a>
@@ -32,36 +32,37 @@
       </nav>
 
       <main>
-        <h2>Greenville Weather</h2>
-          <div class ="row">
+        <h2>Franklin Weather</h2>
+        <div class ="row">
                     <section class="weather-summary">
-                      <h1 class="greenvilleName">Greenville </h1>
+                      <h1 class="franklinName">Franklin </h1> 
 
                       <div class="highlow">
-                        <a>High: <span id= "greenvilleTempHigh"></span>&deg;F |</a>  
-                        <a>Low: <span id= "greenvilleTempLow"></span>&deg;F</a>  
+                        <a>High: <span id= "franklinTempHigh"></span>&deg;F |</a>  
+                        <a>Low: <span id= "franklinTempLow"></span>&deg;F</a>  
                       </div>
 
                       <div class="current">
 
-                        <picture>
-                            <img src="images/badphoto.png" id="greenvilleWeatherImage" alt="greenvilleIcon" width="100">
-                        </picture>
+                        <div class="weather-icon">
+                            <img src="images/badphoto.png" id="franklinWeatherImage" alt="franklinIcon" width="100">
+                        </div>
 
 
                       <div class="conditions">
 
-                        <a>Current Conditions: <span id= "greenvilleConditions"> </span></a> <br>  
-                        <a>Current Temp: <span id= "greenvilleTemp"></span>&deg;F </a>   
+                        <a>Current Conditions: <span id= "franklinConditions"> </span></a> <br>  
+                        <a>Current Temp: <span id= "franklinTemp"></span>&deg;F </a>   
 
                       </div>
 
                       </div>
 
                       <div class="conditions">  
-                        <p>Wind Speed: <span id= "greenvilleWindSpeed">5</span> mph SW</p>
+                        <p>Wind Speed: <span id= "franklinWindSpeed">5</span> mph SW</p>
                         <p><span id="windChill"> </span></p>
                       </div> 
+
                     </section>
 
             <section class="forecast">
@@ -101,7 +102,7 @@
           </div>
           
         <article>
-          <h3>Greenville Annual Motorcycle Ride</h3>	
+          <h3>Franklin Breaks Record</h3>	
           <picture>
             
             <img src="images/franklinSmall.jpg" alt="Franklin" srcset="images/franklinSmall.jpg 1x, images/franklinMedium.jpg 2x, images/franklinLarge.jpg 3x">
@@ -131,6 +132,6 @@
       </footer>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/greenville.js"></script>
+        <script src="scripts/franklin.js"></script>
     </body>
 </html>
