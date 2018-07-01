@@ -209,3 +209,43 @@ form label.top input:required:valid {
 .slideshow-container {
 display: none;    
 }
+
+.franklin-article-img, .springfield-article-img{
+    float: left;
+    display: block;
+    border: 1px solid;
+    box-shadow: 3px 5px rgba(0,0,0,0.8);
+    transition: 0.9s; 
+    margin-right:1.5%;
+    margin-bottom: 1.5%;
+}
+
+.greenville-article-img{
+    float: right;
+    display: block;
+    border: 1px solid;
+    box-shadow: 3px 5px rgba(0,0,0,0.8);
+    transition: 0.9s;
+    margin-left:1.5%;
+    margin-bottom: 1.5%;
+}
+
+.franklin-article-img:hover, .springfield-article-img:hover, .greenville-article-img:hover{
+    box-shadow: 3px 5px #f4d1a4   
+}
+
+
+.franklin-article,.greenville-article,.springfield-article{
+    padding: 2%;
+}
+
+.springfield-article-text{
+    padding-left: %;
+}
+
+picture{
+    float: left;
+    display: block;
+    margin-right:1.5%;
+    margin-bottom: 1.5%;
+}
