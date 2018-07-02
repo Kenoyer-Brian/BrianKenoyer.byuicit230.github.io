@@ -96,6 +96,10 @@ main figure {
     text-align: center;
 }
 
+.franklin-weather-summary,.greenville-weather-summary{
+    border-bottom: 1px solid black;
+}
+
 .forecast{
     display:none;    
 }
