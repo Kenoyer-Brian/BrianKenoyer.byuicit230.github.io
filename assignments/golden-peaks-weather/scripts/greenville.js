@@ -23,3 +23,26 @@
             document.getElementById("greenvilleWindSpeed").innerHTML = "  " + greenvilleWeather.wind.speed;            
             
         }
+        
+        var greenvilleDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var greenvilleData = new XMLHttpRequest();
+        greenvilleData.open('GET', greenvilleDataURL);
+        greenvilleData.responseType = 'json';
+        greenvilleData.send();
+        
+        greenvilleData.onload = function() {   
+            
+            var greenvilleInfo = greenvilleData.response;            
+            
+            document.getElementById("greenvilleTownName").innerHTML = "  " + greenvilleInfo.towns[1].name;
+            
+            document.getElementById("greenvilleTownMotto").innerHTML = "  " + greenvilleInfo.towns[1].motto;
+            
+            document.getElementById("greenvilleEvent1").innerHTML = "  " + greenvilleInfo.towns[1].events[0];
+            
+            document.getElementById("greenvilleEvent2").innerHTML = "  " + greenvilleInfo.towns[1].events[1];
+            
+            document.getElementById("greenvilleEvent3").innerHTML = "  " + greenvilleInfo.towns[1].events[2];
+            
+            document.getElementById("greenvilleEvent4").innerHTML = "  " + greenvilleInfo.towns[1].events[3];
+        }

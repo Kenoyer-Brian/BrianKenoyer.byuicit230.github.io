@@ -2,8 +2,8 @@
         var franklinRequest = new XMLHttpRequest();
         franklinRequest.open('GET', franklinRequestURL);
         franklinRequest.responseType = 'json';
-        franklinRequest.send();
-        
+        franklinRequest.send();  
+
         franklinRequest.onload = function() {
             
             var franklinWeather = franklinRequest.response;
@@ -20,6 +20,29 @@
             
             document.getElementById("franklinConditions").innerHTML = "  " + franklinWeather.weather[0].description;       
             
-            document.getElementById("franklinWindSpeed").innerHTML = "  " + franklinWeather.wind.speed;         
+            document.getElementById("franklinWindSpeed").innerHTML = "  " + franklinWeather.wind.speed;  
+            
+        }            
 
+        
+        var franklinDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var franklinData = new XMLHttpRequest();
+        franklinData.open('GET', franklinDataURL);
+        franklinData.responseType = 'json';
+        franklinData.send();
+        
+        franklinData.onload = function() {   
+            
+            var franklinInfo = franklinData.response;            
+            
+            document.getElementById("franklinTownName").innerHTML = "  " + franklinInfo.towns[0].name;
+            
+            document.getElementById("franklinTownMotto").innerHTML = "  " + franklinInfo.towns[0].motto;
+                        
+            document.getElementById("franklinEvent1").innerHTML = "  " + franklinInfo.towns[0].events[0];
+            
+            document.getElementById("franklinEvent2").innerHTML = "  " + franklinInfo.towns[0].events[1];
+            
+            document.getElementById("franklinEvent3").innerHTML = "  " + franklinInfo.towns[0].events[2];
+            
         }

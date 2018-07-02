@@ -23,3 +23,24 @@
             document.getElementById("springfieldWindSpeed").innerHTML = "  " + springfieldWeather.wind.speed; 
                 
         }
+        
+        var springfieldDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var springfieldData = new XMLHttpRequest();
+        springfieldData.open('GET', springfieldDataURL);
+        springfieldData.responseType = 'json';
+        springfieldData.send();
+        
+        springfieldData.onload = function() {   
+            
+            var springfieldInfo = springfieldData.response;            
+            
+            document.getElementById("springfieldTownName").innerHTML = "  " + springfieldInfo.towns[3].name;
+            
+            document.getElementById("springfieldTownMotto").innerHTML = "  " + springfieldInfo.towns[3].motto;
+            
+            document.getElementById("springfieldEvent1").innerHTML = "  " + springfieldInfo.towns[3].events[0];
+            
+            document.getElementById("springfieldEvent2").innerHTML = "  " + springfieldInfo.towns[3].events[1];
+            
+            document.getElementById("springfieldEvent3").innerHTML = "  " + springfieldInfo.towns[3].events[2];
+        }
