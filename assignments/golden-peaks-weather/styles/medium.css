@@ -1,20 +1,20 @@
 @media only screen and (min-width: 37.5em) {
     
-    .topnav .icon { 
+.topnav .icon { 
     display:none; 
     } 
     
-    .topnav a {
+.topnav a {
     padding: .40rem 0.5rem;
     }
     
-    header{    
+header{    
     padding-left: 12.0rem;
     padding-top: 8.0rem;
     padding-right: 12.0rem;    
     }
     
-    header img {
+header img {
     display: block;    
     width: 55%;
     max-width: 10rem;
@@ -24,13 +24,13 @@
     border-color: white;     
     }
     
-    .topnav  {    
+.topnav  {    
     display:flex;
     padding-left: 7%;
     padding-right: 7%;
     }
     
-    .topnav a {   
+.topnav a {   
     float:left;
     text-align: center;
     padding-left: 3px; 
@@ -38,73 +38,68 @@
     max-width: 210.5px;        
     }
 
-    main {
+main {
     padding-left: 10%;  
     padding-right: 10%;
     }
     
-    .weather-summary,.forecast {
+.franklin-weather-summary,.greenville-weather-summary,.springfield-weather-summary,.weather-summary,.forecast {
     flex: 50%;
     padding: 2%;    
     }
     
-    .weather-summary{
+.franklin-weather-summary,.greenville-weather-summary,.weather-summary{
     border-right: 1px solid black;
     width: 25%;
     }
     
-    main section, .forcast{
+main section, .forcast{
     display: block;    
     }
     
-    .row{ 
+.row{ 
     display: flex;
     }
     
-    .forecast{
+.forecast{
     display:table;
     width: 75%;
     text-align: center;
     }
     
-    th{
+th{
     border: 1px solid black;
     }
     
-    td {
+td {
     border: 1px solid black;
     text-align: center;
     padding: 7px;
     }
     
-    footer {
+footer {
     padding: 7%;    
     }
  
-    div.galleryGrid {
+div.galleryGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-    }
+    grid-column-gap: 2%;
+    }    
     
-    
-    
-    .slideshow-container {
+.slideshow-container {
       display: block;
       max-width: 1500px;
       position: relative;
       margin: auto;
     }
 
-
-    .mySlides {
-        display:none;
+.mySlides {
+      display:none;
     }
-
     
-    .prev, .next {
+.prev, .next {
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -117,24 +112,21 @@
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
     }
-
     
-    .next {
+.next {
       right: 0;
       border-radius: 12px 12px 12px 12px;
     }
 
-    .prev {
-        border-radius: 12px 12px 12px 12px;
+.prev {
+      border-radius: 12px 12px 12px 12px;
     }
-
     
-    .prev:hover, .next:hover {
+.prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
     }
-
     
-    .text {
+.text {
       color: #f2f2f2;
       font-size: 44px;
       padding: 8px 12px;
@@ -142,21 +134,18 @@
       bottom: 8px;
       width: 100%;
       text-align: center;
-      background-color:rgba(255,0,0,0.5);  
-
+      background-color:rgba(255,0,0,0.5);
     }
-
     
-    .numbertext {
+.numbertext {
       color: #f2f2f2;
       font-size: 14px;
       padding: 8px 12px;
       position: absolute;
       top: 0;
     }
-
     
-    .dot {
+.dot {
       cursor: pointer;
       height: 15px;
       width: 15px;
@@ -167,24 +156,23 @@
       transition: background-color 0.6s ease;
     }
 
-    .active, .dot:hover {
+.active, .dot:hover {
       background-color: #717171;
     }
-
     
-    .fade {
+.fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 1.5s;
       animation-name: fade;
       animation-duration: 1.5s;
     }
 
-    @-webkit-keyframes fade {
+@-webkit-keyframes fade {
       from {opacity: .4} 
       to {opacity: 1}
     }
 
-    @keyframes fade {
+@keyframes fade {
       from {opacity: .4} 
       to {opacity: 1}
     }

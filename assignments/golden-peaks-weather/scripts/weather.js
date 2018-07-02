@@ -24,6 +24,23 @@
 
         }
         
+                var franklinDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var franklinData = new XMLHttpRequest();
+        franklinData.open('GET', franklinDataURL);
+        franklinData.responseType = 'json';
+        franklinData.send();
+        
+        franklinData.onload = function() {   
+            
+            var franklinInfo = franklinData.response;            
+            
+            document.getElementById("franklinTownName").innerHTML = "  " + franklinInfo.towns[0].name;
+            
+            document.getElementById("franklinTownMotto").innerHTML = "  " + franklinInfo.towns[0].motto;
+            
+        }
+        
+        
         var greenvilleRequestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=98046&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
         var greenvilleRequest = new XMLHttpRequest();
         greenvilleRequest.open('GET', greenvilleRequestURL);
@@ -50,6 +67,22 @@
             
         }
         
+        var greenvilleDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var greenvilleData = new XMLHttpRequest();
+        greenvilleData.open('GET', greenvilleDataURL);
+        greenvilleData.responseType = 'json';
+        greenvilleData.send();
+        
+        greenvilleData.onload = function() {   
+            
+            var greenvilleInfo = greenvilleData.response;            
+            
+            document.getElementById("greenvilleTownName").innerHTML = "  " + greenvilleInfo.towns[1].name;
+            
+            document.getElementById("greenvilleTownMotto").innerHTML = "  " + greenvilleInfo.towns[1].motto;
+        }
+        
+        
         var springfieldRequestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=98292&appid=4d7435e62a55c0ffc9930421206a8f9f&units=imperial';
         var springfieldRequest = new XMLHttpRequest();
         springfieldRequest.open('GET', springfieldRequestURL);
@@ -75,3 +108,19 @@
             document.getElementById("springfieldWindSpeed").innerHTML = "  " + springfieldWeather.wind.speed; 
                 
         }
+        
+        var springfieldDataURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var springfieldData = new XMLHttpRequest();
+        springfieldData.open('GET', springfieldDataURL);
+        springfieldData.responseType = 'json';
+        springfieldData.send();
+        
+        springfieldData.onload = function() {   
+            
+            var springfieldInfo = springfieldData.response;            
+            
+            document.getElementById("springfieldTownName").innerHTML = "  " + springfieldInfo.towns[3].name;
+            
+            document.getElementById("springfieldTownMotto").innerHTML = "  " + springfieldInfo.towns[3].motto;
+        }
+        

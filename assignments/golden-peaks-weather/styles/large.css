@@ -1,25 +1,24 @@
 @media only screen and (min-width: 64em ) {
-    
-    header img {        
+
+header img {        
     width: 20%;
     max-width: 15rem;
     }
     
-    .topnav  {    
+.topnav  {    
     display:flex;
     padding-left: 12%;
     padding-right: 12%;
     }
     
-      footer {
+footer {
     padding: 10%;    
     }
     
-    div.galleryGrid {
+div.galleryGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 2%;
 }
   }

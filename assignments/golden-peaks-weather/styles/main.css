@@ -14,7 +14,7 @@ header{
 }
 
 header img {
-display: none;    
+    display: none;    
 }
 
 header h1 {
@@ -32,8 +32,8 @@ header h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -73,7 +73,7 @@ header h1 {
 }
 
 .topnav .active {
-     background-color: #717171;
+    background-color: #717171;
 }
 
 main { 
@@ -92,7 +92,7 @@ main figure {
     margin: 0 0 .2rem 2%; width:96%;
 }
 
-.weather-summary{
+.franklin-weather-summary,.greenville-weather-summary,.springfield-weather-summary,.weather-summary{
     text-align: center;
 }
 
@@ -119,13 +119,15 @@ div.galleryGrid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    
 }
 
 div.gallery{
     border: 1px solid;
     box-shadow: 3px 5px rgba(0,0,0,0.8);
     transition: 0.9s;
+    margin-bottom: 5.5%;
+    max-width: 350px;
 }
 
 div.gallery:hover {
@@ -154,7 +156,6 @@ form legend {
     padding: 0 .5rem;
     font-size: 20px;
 }
-
 
 form lable.top, form div{
     display: block;    
@@ -207,7 +208,7 @@ form label.top input:required:valid {
 }
 
 .slideshow-container {
-display: none;    
+    display: none;    
 }
 
 .franklin-article-img, .springfield-article-img{
@@ -234,13 +235,12 @@ display: none;
     box-shadow: 3px 5px #f4d1a4   
 }
 
-
 .franklin-article,.greenville-article,.springfield-article{
     padding: 2%;
 }
 
 .springfield-article-text{
-    padding-left: %;
+    padding-left: 1%;
 }
 
 picture{
