@@ -1,0 +1,39 @@
+@media only screen and (min-width: 64em ) {
+    
+.topnav  {    
+    display:flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    }
+    
+    .topnav a {
+    margin-top: 2%;
+}
+
+.topnav h2{
+    margin-right: 5%;
+    margin-top: -1.5%;
+    margin-bottom: -1.5%; 
+    margin-left: -9.5%;
+}
+    
+.numbertext {
+    margin-top: 15%;
+    }    
+    
+footer {    
+    padding-top: 20px;    
+    }
+    
+.springfield-article{
+    padding-bottom: 10%;
+}    
+
+div.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    margin-left: 4%;
+    }
+}
