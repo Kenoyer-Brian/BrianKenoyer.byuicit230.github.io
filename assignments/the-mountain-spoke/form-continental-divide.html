@@ -4,7 +4,7 @@
         <meta charset="utf-8">  
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content=" Assignment portal by Brian Kenoyer for BYUI CIT230.  ">
-        <title>The Mountain Spoke | Service </title>       
+        <title>The Mountain Spoke | Form for Continental Divide  </title>       
         <link rel="stylesheet" href="styles/normalize.css">  
         <link rel="stylesheet" href="styles/main.css"> 
         <link rel="stylesheet" href="styles/medium.css">          
@@ -20,67 +20,44 @@
                 <h2><img src="images/logo.png" width="160" height="109" alt=" Mountain Spoke Logo">Mountain Spoke</h2>
                 <a href="index.html">Home</a>
                 <a href="tours.html">Adventure Tours</a>
-                <a href="events.html">Events</a>
+                <a href="events.html" class="active" >Events</a>
                 <a href="sales.html">Sales</a>
-                <a href="service.html" class="active" >Service</a>
+                <a href="service.html"  >Service</a>
                 <a href="contact.html">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
 
             </nav>
         
         <header>
-            <div class="header-img">
-                <img src="images/bicycle-service.jpg" alt=" Bikes In Racks">
+             <div class="header-img">
+                <img src="images/agree.jpg" alt=" Form">
             </div>
+
         </header>
 
         <main>
-           <table>
-
-              <thead>
-                <tr>                    
-                    <th colspan="3">Services Offered</th>
-                </tr>
+            <form method="get" action="thanks.html" >
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name* <input pattern="[A-Z a-z ]{5,}" type="text" name="fullname" required></label><br>
+                    <label class="top">Date of Birth* <input pattern="\d{1,2}/\d{1,2}/\d{4}" type="text" name="date" required placeholder="mm/dd/yyyy" ></label><br>
+                    <label class="top">Phone* <input type="tel" name="phone" required></label><br>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label><br>
+                    <label class="top">State* <input pattern="[A-Za-z]{2}" type="text" name="state" required placeholder="WA" ></label><br>
+                    <label class="top">Email (optional)<input type="email" name="email" placeholder="someone@somewhere.com" ></label><br>                 
                     
-                <tr>                    
-                  <th>Services</th>
-                  <th>Cost</th>
-                </tr>
-              </thead>
+                </fieldset> 
                 
-              <tbody>
-                <tr>
-                  <td>Tuneup</td>
-                  <td>$50</td>                    
-                </tr>
-                  
-                <tr>
-                  <td>Brake Adjustment</td>
-                  <td>$25</td>                    
-                </tr>
-                  
-                <tr>
-                  <td>True Wheels</td>
-                  <td>$80</td>                   
-                </tr>
-                  
-                <tr>
-                  <td>Sprocket and Chain Replacement</td>
-                  <td>$100</td>                    
-                </tr>
-                  
-                <tr>
-                  <td>Hub Replacement</td>
-                  <td>$80</td>                    
-                </tr>
-                  
-                <tr>
-                  <td>Steering Bearing</td>
-                  <td>$90</td>                   
-                </tr>
-                  
-              </tbody>
-            </table>    
+                <fieldset>
+                    <legend>Additional Information</legend>            
+                    <div>Additional Comments</div>
+                    <input type="text" name="authors">            
+                </fieldset>
+                
+                
+                
+                <input type="submit" value="Register"  class="submitBtn">
+            </form>                    
         </main>
         
         <footer>

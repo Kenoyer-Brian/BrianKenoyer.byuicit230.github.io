@@ -73,7 +73,7 @@ header h1 {
     max-height: 35px;
 }
 
-.topnav h2{
+.topnav img{
     border: solid 2px orange;
     float: left;
     margin-right: 55%;
@@ -285,6 +285,18 @@ form label.top input:required:valid {
 
 .springfield-article{
     padding-bottom: 5%;
+}
+
+table{ 
+    display:table;
+    box-shadow: 10px 10px 6px 6px #ccc;
+    box-shadow: 5px 5px 6px 6px #ccc;
+    background-position: top;
+    background-color: rgba(0,0,0,0.2);
+    background-size: 1275px 500px;
+    padding: 5%;
+    margin-left: 21%;
+    margin-top: 40%;
 }
 
 picture{

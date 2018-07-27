@@ -27,8 +27,14 @@ footer {
     
 .springfield-article{
     padding-bottom: 10%;
-}    
-
+}   
+    
+table{
+    padding: 5%;
+    margin-left: 41%;
+    margin-top: 5%;
+}
+    
 div.galleryGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
